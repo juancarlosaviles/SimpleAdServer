@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<title>AdCampain Application</title>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta charset="UTF-8">
+
+<!-- load bootstrap and fontawesome via CDN -->
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="client.js"></script>
+<style>
+html, body {
+	font-size: 1.1em;
+}
+</style>
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+	<div class="container">
+		<h1>AdCampain Server Aplication</h1>
+		<form class="navbar-form navbar-left" role="search">
+			<div class="form-group">
+			PartnerId: 
+			<input class="form-control" id="partnerId"><br>
+			Duration : 
+			<input class="form-control" id="duration"><br>
+			Content: <br>
+			<textarea class="form-control" id="adContent"></textarea>
+			<br>
+			<input type="button" value="fetch" onClick="doGet()" class="btn btn-default" /> 
+		    <input type="button" value="add" onClick="doPost()"class="btn btn-default" />
+			</div>
+		</form>
+	</div>
+	</nav>
+
+</body>
+</html>
